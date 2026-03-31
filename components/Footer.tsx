@@ -1,103 +1,125 @@
-import Link from 'next/link';
-
 export default function Footer() {
   return (
-    <footer className="bg-[#2B2B2B] text-white">
+    <footer className="bg-[#2C241F] text-white">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
-          <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-4">
+          <div className="lg:col-span-2">
+            <div className="mb-4">
               <img 
-                src="/images/IMG-20211108-WA0018 (1).jpg" 
-                alt="Zanzibar Holiday Logo"
-                className="w-10 h-10 rounded-full object-cover"
+                src="../images/logo-elongated.png" 
+                alt="Zanzibar Holiday Packages" 
+                className="h-16 w-32 object-contain"
               />
-              <div className="flex flex-col">
-                <span className="text-xl font-bold leading-tight">Zanzibar</span>
-                <span className="text-lg font-medium leading-tight">Holiday</span>
-              </div>
             </div>
-            <p className="text-gray-300 max-w-md mb-4">
-              Experience the ultimate Zanzibar holiday with our curated packages, luxury accommodations, 
-              and unforgettable activities in paradise. Discover the beauty of Zanzibar with us.
+            <h3 className="text-xl font-bold mb-3">Zanzibar Holiday Packages</h3>
+            <p className="text-gray-300 mb-6 leading-relaxed text-sm">
+              Leading eco-luxury tour operator crafting tailor-made gorilla trekking adventures 
+              and authentic wildlife safaris across Uganda and Rwanda, with seamless extensions 
+              into Kenya and Tanzania.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M20 10C20 4.477 15.523 0 10 0S0 4.477 0 10c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V10h2.54V7.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V10h2.773l-.443 2.89h-2.33v6.988C16.343 19.128 20 14.991 20 10z" clipRule="evenodd"/>
+              <a href="#" className="text-gray-400 hover:text-[#D4A017] transition-colors">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                 </svg>
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+              <a href="#" className="text-gray-400 hover:text-[#D4A017] transition-colors">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                 </svg>
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M12.017 2.43A45.232 45.232 0 0114.5 2C16.376 2 18 3.626 18 5.5c0 1.56-.755 2.94-1.914 3.79A1.49 1.49 0 0115.5 10h-11A1.5 1.5 0 013 8.5c0-1.56.755-2.94 1.914-3.79A1.49 1.49 0 015.5 4c.64 0 1.24.16 1.767.43.527.27.97.65 1.293 1.11.323-.46.766-.84 1.293-1.11zM10 13a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd"/>
-                  <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308c-.78.348-1.64.54-2.5.54h-11c-.86 0-1.72-.192-2.5-.54z"/>
+              <a href="#" className="text-gray-400 hover:text-[#D4A017] transition-colors">
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
                 </svg>
               </a>
             </div>
           </div>
 
+          {/* Destinations with Flags */}
+          <div>
+            <h4 className="text-lg font-semibold mb-4 text-[#D4A017]">Destinations</h4>
+            <ul className="space-y-3">
+              <li>
+                <a href="/destinations/uganda" className="flex items-center text-gray-300 hover:text-[#D4A017] transition-colors group">
+                  <img src="https://flagcdn.com/w40/ug.png" alt="Uganda flag" className="w-6 h-4 mr-3 object-cover rounded" />
+                  <span className="text-sm">Uganda</span>
+                </a>
+              </li>
+              <li>
+                <a href="/destinations/rwanda-gorillas" className="flex items-center text-gray-300 hover:text-[#D4A017] transition-colors group">
+                  <img src="https://flagcdn.com/w40/rw.png" alt="Rwanda flag" className="w-6 h-4 mr-3 object-cover rounded" />
+                  <span className="text-sm">Rwanda</span>
+                </a>
+              </li>
+              <li>
+                <a href="/destinations/tanzania-safaris" className="flex items-center text-gray-300 hover:text-[#D4A017] transition-colors group">
+                  <img src="https://flagcdn.com/w40/tz.png" alt="Tanzania flag" className="w-6 h-4 mr-3 object-cover rounded" />
+                  <span className="text-sm">Tanzania</span>
+                </a>
+              </li>
+              <li>
+                <a href="/destinations/zanzibar" className="flex items-center text-gray-300 hover:text-[#D4A017] transition-colors group">
+                  <img src="https://flagcdn.com/w40/tz.png" alt="Zanzibar flag" className="w-6 h-4 mr-3 object-cover rounded" />
+                  <span className="text-sm">Zanzibar</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li><Link href="/" className="text-gray-300 hover:text-white transition-colors">Home</Link></li>
-              <li><Link href="/destinations" className="text-gray-300 hover:text-white transition-colors">Destinations</Link></li>
-              <li><Link href="/activities" className="text-gray-300 hover:text-white transition-colors">Activities</Link></li>
-              <li><Link href="/accommodation" className="text-gray-300 hover:text-white transition-colors">Accommodation</Link></li>
-              <li><Link href="/about" className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-300 hover:text-white transition-colors">Contact</Link></li>
+            <h4 className="text-lg font-semibold mb-4 text-[#D4A017]">Quick Links</h4>
+            <ul className="space-y-3">
+              <li><a href="/" className="text-gray-300 hover:text-[#D4A017] transition-colors text-sm">Home</a></li>
+              <li><a href="/about" className="text-gray-300 hover:text-[#D4A017] transition-colors text-sm">About Us</a></li>
+              <li><a href="/tours/safari-types" className="text-gray-300 hover:text-[#D4A017] transition-colors text-sm">Safari Packages</a></li>
+              <li><a href="/tours/gorilla-tours" className="text-gray-300 hover:text-[#D4A017] transition-colors text-sm">Gorilla Trekking</a></li>
+              <li><a href="/about/contact" className="text-gray-300 hover:text-[#D4A017] transition-colors text-sm">Contact Us</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-2">
-                <svg className="w-4 h-4 text-[#0E7C7B]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+            <h4 className="text-lg font-semibold mb-4 text-[#D4A017]">Contact Us</h4>
+            <ul className="space-y-3 text-gray-300">
+              <li className="flex items-start">
+                <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0 text-[#D4A017]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
-                <span className="text-gray-300">+255 777 123 456</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <svg className="w-4 h-4 text-[#0E7C7B]" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
-                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                <span className="text-sm">Kampala, Uganda</span>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0 text-[#D4A017]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-gray-300">bigapesafrica@gmail.com</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <svg className="w-4 h-4 text-[#0E7C7B]" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"/>
+                <a href="tel:+256778019248" className="text-sm hover:text-[#D4A017] transition-colors">+256 778 019 248</a>
+              </li>
+              <li className="flex items-start">
+                <svg className="w-5 h-5 mr-3 mt-0.5 flex-shrink-0 text-[#D4A017]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
-                <span className="text-gray-300">Stone Town, Zanzibar</span>
-              </div>
-            </div>
+                <a href="mailto:bigapesafrica@gmail.com" className="text-sm hover:text-[#D4A017] transition-colors break-all">bigapesafrica@gmail.com</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-700">
-        <div className="max-w-7xl mx-auto px-4 md:px-8 py-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-400 text-sm">
-              © 2025 Zanzibar Holiday. All rights reserved.
+              © {new Date().getFullYear()} Zanzibar Holiday Packages. All rights reserved.
             </p>
-            <div className="flex space-x-6 mt-2 md:mt-0">
-              <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
-                Terms of Service
-              </Link>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+              <a href="#" className="text-gray-400 hover:text-[#D4A017] text-sm transition-colors">Privacy Policy</a>
+              <a href="#" className="text-gray-400 hover:text-[#D4A017] text-sm transition-colors">Terms of Service</a>
+              <a href="#" className="text-gray-400 hover:text-[#D4A017] text-sm transition-colors">Cookie Policy</a>
             </div>
           </div>
         </div>
